@@ -1,18 +1,8 @@
-Taskwarrior-web in Docker container
-===================================
+# My Dockerfiles
 
-It runs taswarrior-web and executes `task sync` command every five minutes,
+This repository contains my personal collection of Dockerfiles, which I'm using often or had to use at some point.
 
-Run
----
-```
-docker run -d \
-    -v `pwd`/.taskrc:/root/.taskrc \
-    -v `pwd`/.task:/root/.task \
-    -p 5678:5678 \
-    zebradil/taskwarrior-web
-```
+For more details see README.md in corresponding subdirectories.
 
-`.taskrc` is required. `.task` is optional, it depends on what is specified in `.taskrc`.
-
-So, run the command above and open http://localhost:5678 in browser.
+- [taskwarrior-web](taskwarrior-web)
+- [yay](yay)
